@@ -16,5 +16,10 @@ namespace Russian_Roulette_game
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
