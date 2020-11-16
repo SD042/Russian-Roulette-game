@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 
 namespace Russian_Roulette_game
 {
     public partial class Gunshotform : Form
     {
+    
         public Gunshotform()
         {
             InitializeComponent();
@@ -19,14 +25,22 @@ namespace Russian_Roulette_game
 
         private void buttonload_Click(object sender, EventArgs e)
         {
-            Spin.Enabled = true;
+            Spin.Enabled = true;//disabling spin button
             Load.Enabled = false;
 
             //code to display image in picture box on button click  
-            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetExecutingAssembly();
-            System.IO.Stream myStream = myAssembly.GetManifestResourceStream("Gunshotform.Resources.load.gif");
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+
+            Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulette_game.Resources.load.gif");
+
             Bitmap bmp_Object = new Bitmap(myStream);
+
             picturebox.Image = bmp_Object;
+
+           //sound code
+
+
+
 
         }
 
@@ -34,6 +48,15 @@ namespace Russian_Roulette_game
         {
             Shoot.Enabled = true;//disabling shoot button
             Spin.Enabled = false;
+            //code to display image in picture box on button click  
+
+           Assembly myAssembly = Assembly.GetExecutingAssembly(); 
+
+           Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulette_game.Resources.Spin.gif");
+
+            Bitmap bmp_Object = new Bitmap(myStream);
+
+            picturebox.Image = bmp_Object;
 
         }
 
@@ -41,12 +64,32 @@ namespace Russian_Roulette_game
         {
             ShootAway.Enabled = true;//disabling ShootAway button
             Shoot.Enabled = false;
+            //code to display image in picture box on button click  
+
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+
+            Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulette_game.Resources.shoot.gif");
+
+            Bitmap bmp_Object = new Bitmap(myStream);
+
+            picturebox.Image = bmp_Object;
         }
 
         private void buttonshootaway_Click(object sender, EventArgs e)
         {
             Shoot.Enabled = true;//disabling shoot button
             ShootAway.Enabled = false;
+            //code to display image in picture box on button click  
+
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+
+            Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulette_game.Resources.Shoot_Away.jpg");
+
+            Bitmap bmp_Object = new Bitmap(myStream);
+
+            picturebox.Image = bmp_Object;
+
+
         }
 
         private void buttonplayagain_Click(object sender, EventArgs e)

@@ -140,6 +140,7 @@
 
         private System.Windows.Forms.PictureBox picturebox;
         private System.Windows.Forms.Button Load;
+        private System.Windows.Forms.Button Clone;
         private System.Windows.Forms.Button Spin;
         private System.Windows.Forms.Button Shoot;
         private System.Windows.Forms.Button ShootAway;
