@@ -90,7 +90,7 @@
     <EmbeddedResource Include="Resources\shoot.gif" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\shoot_Away .gif" />
+    <EmbeddedResource Include="Resources\Shoot_Away.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

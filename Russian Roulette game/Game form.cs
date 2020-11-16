@@ -83,7 +83,7 @@ namespace Russian_Roulette_game
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
 
-            Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulette_game.Resources.Shoot_Away.jpg");
+            Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulette_game.Resources.Shoot_Away.gif");
 
             Bitmap bmp_Object = new Bitmap(myStream);
 

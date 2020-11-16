@@ -12731,8 +12731,8 @@
   <data name="shoot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shoot.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shoot_away" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shoot away .gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Shoot_Away" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shoot_Away.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Spin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Spin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -83,9 +83,9 @@ namespace Russian_Roulette_game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap shoot_away {
+        internal static System.Drawing.Bitmap Shoot_Away {
             get {
-                object obj = ResourceManager.GetObject("shoot_away", resourceCulture);
+                object obj = ResourceManager.GetObject("Shoot_Away", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
