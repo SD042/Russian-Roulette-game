@@ -94,9 +94,7 @@ namespace Russian_Roulette_game
 
         private void buttonplayagain_Click(object sender, EventArgs e)
         {
-            Load.Enabled = true;//disabling load button
-            Spin.Enabled = false;
-            Shoot.Enabled = false;
+            Application.Restart();
         }
 
         private void buttonexit_Click(object sender, EventArgs e)
