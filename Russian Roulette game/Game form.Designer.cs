@@ -46,6 +46,7 @@
             this.picturebox.Size = new System.Drawing.Size(356, 250);
             this.picturebox.TabIndex = 0;
             this.picturebox.TabStop = false;
+            this.picturebox.Click += new System.EventHandler(this.btnpicturebox);
             // 
             // Load
             // 
@@ -130,7 +131,6 @@
             this.Controls.Add(this.picturebox);
             this.Name = "Gunshotform";
             this.Text = "Gunshotform";
-            this.Load += new System.EventHandler(this.Gunshotform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
 
