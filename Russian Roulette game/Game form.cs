@@ -91,6 +91,14 @@ namespace Russian_Roulette_game
 
             picturebox.Image = bmp_Object;
 
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Russian_Roulette_game.Properties.Resources.shootaway);
+
+            Sound_Object.Play();
+
+
+
+
+
 
         }
 
