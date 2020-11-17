@@ -92,5 +92,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Shoot_Away.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\load.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shootaway.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

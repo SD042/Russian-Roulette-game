@@ -37,8 +37,10 @@ namespace Russian_Roulette_game
 
             picturebox.Image = bmp_Object;
 
-           //sound code
+            //sound code
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Russian_Roulette_game.Properties.Resources.load1);
 
+            Sound_Object.Play();
 
 
 

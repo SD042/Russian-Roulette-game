@@ -71,6 +71,15 @@ namespace Russian_Roulette_game.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream load1 {
+            get {
+                return ResourceManager.GetStream("load1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap shoot {
@@ -87,6 +96,15 @@ namespace Russian_Roulette_game.Properties {
             get {
                 object obj = ResourceManager.GetObject("Shoot_Away", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream shootaway {
+            get {
+                return ResourceManager.GetStream("shootaway", resourceCulture);
             }
         }
         
