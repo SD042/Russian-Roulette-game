@@ -10,14 +10,15 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
+using Russian_Roulette_game.Properties;
 
 namespace Russian_Roulette_game
 {
     public partial class Gunshotform : Form
     {
-    
+        logicClass logic_obj = new logicClass();
+
+
         public Gunshotform()
         {
             InitializeComponent();
@@ -79,6 +80,40 @@ namespace Russian_Roulette_game
 
         private void buttonshootaway_Click(object sender, EventArgs e)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             Shoot.Enabled = true;//disabling shoot button
             ShootAway.Enabled = false;
             //code to display image in picture box on button click  
