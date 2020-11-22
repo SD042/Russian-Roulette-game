@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Russian_Roulette_game.Properties
 {
-    public class logic
+    public class Game_logic
     {
         public int load_data { get; set; }
         public int spin_data { get; set; }
@@ -15,11 +15,11 @@ namespace Russian_Roulette_game.Properties
         public int chances = 0;
         public int shoot_method()
         {
-            if (load_data == spin_data)
+            if(load_data == spin_data)
             {
                 return 1;
             }
-            else if (spin_data == 6)
+            else if(spin_data == 6)
             {
                 spin_data = 1;
                 return 0;
@@ -29,10 +29,10 @@ namespace Russian_Roulette_game.Properties
                 spin_data++;
                 return 0;
             }
-
+            
         }
     }
-
+   
 }
 
 

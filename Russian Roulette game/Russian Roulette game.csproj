@@ -52,6 +52,13 @@
     <Compile Include="Game form.Designer.cs">
       <DependentUpon>Game form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game_class.cs" />
+    <Compile Include="Game_logic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game_logic.Designer.cs">
+      <DependentUpon>Game_logic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game form.resx">
@@ -62,6 +69,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Game_logic.cs" />
     <Compile Include="Properties\logic.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
