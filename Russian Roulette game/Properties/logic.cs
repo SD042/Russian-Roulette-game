@@ -6,50 +6,33 @@ using System.Threading.Tasks;
 
 namespace Russian_Roulette_game.Properties
 {
-
-    public class logicClass
+    public class logic
     {
-       
-        public int load_position;
-        public int spin_position;
-        public int shoot_position;
-        public int chance = 0;
-
-        public void load()
+        public int load_data { get; set; }
+        public int spin_data { get; set; }
+        public int shoot_data { get; set; }
+        public int shootaway_data { get; set; }
+        public int chances = 0;
+        public int shoot_method()
         {
-            load_position = 1;
-        }
-
-        
-
-        public int spin()
-        {
-            Random rnd_obj = new Random();
-            spin_position = rnd_obj.Next(1, 7);
-            return spin_position;
-        }
-
-       
-        public int shoot()
-        {
-            if (load_position == spin_position)
+            if (load_data == spin_data)
             {
-                return 0;
-            }
-            else if (spin_position == 6)
-            {
-                spin_position = 1;
                 return 1;
+            }
+            else if (spin_data == 6)
+            {
+                spin_data = 1;
+                return 0;
             }
             else
             {
-                spin_position++;
-                return 1;
+                spin_data++;
+                return 0;
             }
 
         }
-
     }
+
 }
 
 
