@@ -16,7 +16,7 @@ namespace Russian_Roulette_game
 {
     public partial class Gunshotform : Form
     {
-        logicClass logic_obj = new logicClass();
+        Game_logic logic_obj = new Game_logic();
 
 
         public Gunshotform()
