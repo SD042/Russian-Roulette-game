@@ -61,6 +61,8 @@ namespace Russian_Roulette_game
 
             picturebox.Image = bmp_Object;
 
+            MessageBox.Show("Bullet position after spining the chamber is" + logic_obj.spin_position.ToString());
+
         }
 
         private void buttonshoot_Click(object sender, EventArgs e)
@@ -76,6 +78,16 @@ namespace Russian_Roulette_game
             Bitmap bmp_Object = new Bitmap(myStream);
 
             picturebox.Image = bmp_Object;
+
+            logic_obj.shoot_position = logic_obj.shoot_method();
+            if (logic_obj.shoot_position == 1)
+            {
+                MessageBox.Show("Bullet shoot on your head.You are dead");
+            }
+            else
+            {
+                MessageBox.Show("empty shoot");
+            }
         }
 
         private void buttonshootaway_Click(object sender, EventArgs e)
