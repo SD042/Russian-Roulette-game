@@ -79,7 +79,7 @@ namespace Russian_Roulette_game
 
             picturebox.Image = bmp_Object;
 
-            logic_obj.shoot_position = logic_obj.shoot_method();
+            logic_obj.shoot_position = logic_obj.shoot();
             if (logic_obj.shoot_position == 1)
             {
                 MessageBox.Show("Bullet shoot on your head.You are dead");
@@ -92,38 +92,6 @@ namespace Russian_Roulette_game
 
         private void buttonshootaway_Click(object sender, EventArgs e)
         {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             Shoot.Enabled = true;//disabling shoot button

@@ -52,7 +52,7 @@
     <Compile Include="Game form.Designer.cs">
       <DependentUpon>Game form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Game_class.cs" />
+    <Compile Include="Game_logic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game form.resx">

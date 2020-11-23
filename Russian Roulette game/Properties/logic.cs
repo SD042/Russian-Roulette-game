@@ -13,7 +13,7 @@ namespace Russian_Roulette_game.Properties
         public int shoot_position { get; set; }
         public int shootaway_data { get; set; }
         public int chances = 0;
-        public int shoot_method()
+        public int Shoot_method()
         {
             if(load_position == spin_position)
             {

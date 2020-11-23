@@ -1,17 +1,40 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Russian_Roullet_GameUnitTestProject1
+namespace Russian_Roulette_game.Properties
 {
-    internal class Game_logic
+    public class Game_logic
     {
-        internal int load_Position;
-        internal int load_position;
-        internal int spin_position;
-        internal int spin_Position;
-
-        internal int shoot_method()
+        public int load_position { get; set; }
+        public int spin_position { get; set; }
+        public int shoot_position { get; set; }
+        public int shootaway_data { get; set; }
+        public int chances = 0;
+        public int Shoot_method()
         {
-            throw new NotImplementedException();
+            if (load_position == spin_position)
+            {
+                return 1;
+            }
+            else if (spin_position == 6)
+            {
+                spin_position = 1;
+                return 0;
+            }
+            else
+            {
+                spin_position++;
+                return 0;
+            }
+
         }
     }
+
 }
+
+
+
+

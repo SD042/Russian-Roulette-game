@@ -2,29 +2,29 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Russian_Roulette_game;
 
-namespace Russian_Roullet_GameUnitTestProject1
+namespace Russian_Roulette_gameUnitTest
 {
     [TestClass]
     public class UnitTest1
     {
         Game_logic unitTesting_obj = new Game_logic();
-
         [TestMethod]
+        
         public void Shoot_Test()
         {
-            unitTesting_obj.load_Position = 1;
-            unitTesting_obj.spin_Position = 1;
-            int testResult = unitTesting_obj.shoot_method();
+            unitTesting_obj.load_position = 1;
+            unitTesting_obj.spin_position = 1;
+            int testResult = unitTesting_obj.shoot();
             Assert.AreEqual(1, testResult);
         }
         [TestMethod]
         public void Shoot_Test_Neg()
         {
+
             unitTesting_obj.load_position = 1;
             unitTesting_obj.spin_position = 5;
-            int testResult = unitTesting_obj.shoot_method();
+            int testResult = unitTesting_obj.shoot();
             Assert.AreNotEqual(1, testResult);
         }
     }
 }
-
