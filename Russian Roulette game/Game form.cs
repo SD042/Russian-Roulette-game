@@ -26,8 +26,8 @@ namespace Russian_Roulette_game
 
         private void buttonload_Click(object sender, EventArgs e)
         {
-            Spin.Enabled = true;//disabling spin button
-            Load.Enabled = false;
+            Spin.Enabled = true;//Enablingbling spin button
+            Load.Enabled = false;//Disabling load button
 
             //code to display image in picture box on button click  
             Assembly myAssembly = Assembly.GetExecutingAssembly();
@@ -49,8 +49,8 @@ namespace Russian_Roulette_game
 
         private void buttonspin_Click(object sender, EventArgs e)
         {
-            Shoot.Enabled = true;//disabling shoot button
-            Spin.Enabled = false;
+            Shoot.Enabled = true;//Enabling shoot button
+            Spin.Enabled = false;//disabling spin button
             //code to display image in picture box on button click  
 
            Assembly myAssembly = Assembly.GetExecutingAssembly(); 
@@ -67,8 +67,8 @@ namespace Russian_Roulette_game
 
         private void buttonshoot_Click(object sender, EventArgs e)
         {
-            ShootAway.Enabled = true;//disabling ShootAway button
-            Shoot.Enabled = false;
+            ShootAway.Enabled = true;//Enabling ShootAway button
+            Shoot.Enabled = false;//Disabling Shoot button
             //code to display image in picture box on button click  
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
