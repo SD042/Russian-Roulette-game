@@ -10,25 +10,25 @@ namespace Russian_Roulette_game.Properties
     {
         
        
-            public int load_data { get; set; }
-            public int spin_data { get; set; }
-            public int shoot_data { get; set; }
+            public int load_position { get; set; }
+            public int spin_position { get; set; }
+            public int shoot_position { get; set; }
             public int shootaway_data { get; set; }
             public int chances = 0;
-            public int shoot_method()
+            public int shoot_position()
             {
-                if (load_data == spin_data)
+                if (load_position == spin_position)
                 {
                     return 1;
                 }
-                else if (spin_data == 6)
+                else if (spin_position == 6)
                 {
-                    spin_data = 1;
+                spin_position = 1;
                     return 0;
                 }
                 else
                 {
-                    spin_data++;
+                spin_position++;
                     return 0;
                 }
 
