@@ -144,7 +144,7 @@
             this.Controls.Add(this.picturebox);
             this.Name = "Gunshotform";
             this.Text = "Gunshotform";
-            this.Load += new System.EventHandler(this.Gunshotform_Load_1);
+            //this.Load += new System.EventHandler(this.Gunshotform_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
 

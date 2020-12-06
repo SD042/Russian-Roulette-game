@@ -19,9 +19,24 @@ namespace Russian_Roulette_game
 
         private void btn_Back(object sender, EventArgs e)
         {
-            Game_Rules game_obj = new Game_Rules();
+            Gunshotform game_obj = new Gunshotform();
             game_obj.Show();
             this.Hide();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
