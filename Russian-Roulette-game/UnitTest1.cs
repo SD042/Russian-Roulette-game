@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Russian_Roulette_game;
+using Russian_Roulette_game.Properties;
 
 namespace Russian_Roulette_gameUnitTest
 {
@@ -14,7 +15,7 @@ namespace Russian_Roulette_gameUnitTest
         {
             unitTesting_obj.load_position = 1;
             unitTesting_obj.spin_position = 1;
-            int testResult = unitTesting_obj.shoot();
+            int testResult = unitTesting_obj.Shoot_method();
             Assert.AreEqual(1, testResult);
         }
         [TestMethod]
@@ -23,7 +24,7 @@ namespace Russian_Roulette_gameUnitTest
 
             unitTesting_obj.load_position = 1;
             unitTesting_obj.spin_position = 5;
-            int testResult = unitTesting_obj.shoot();
+            int testResult = unitTesting_obj.Shoot_method();
             Assert.AreNotEqual(1, testResult);
         }
     }

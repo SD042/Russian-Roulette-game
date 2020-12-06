@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Russian_Roulette_game
 {
-    public class Game_logic
+    class Game_logic
     {
         public int load_position { get; set; }
         public int spin_position { get; set; }
         public int shoot_position { get; set; }
-        public int chance = 0;
-        public int shoot()
+        public int shootaway_position { get; set; }
+        public int chances = 0;
+
+        public int shoot_method()
         {
             if (load_position == spin_position)
             {
@@ -23,12 +25,14 @@ namespace Russian_Roulette_game
                 spin_position = 1;
                 return 0;
             }
-            else
-            {
-                spin_position++;
-                return 0;
-            }
 
-        }
+
+            else
+                {
+                    spin_position++;
+                    return 0;
+                }
+
+            }
     }
 }

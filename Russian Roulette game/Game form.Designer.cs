@@ -36,6 +36,7 @@
             this.ShootAway = new System.Windows.Forms.Button();
             this.Play_Again = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
+            this.Rules = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             this.picturebox.Location = new System.Drawing.Point(12, 12);
             this.picturebox.Name = "picturebox";
-            this.picturebox.Size = new System.Drawing.Size(356, 250);
+            this.picturebox.Size = new System.Drawing.Size(674, 361);
             this.picturebox.TabIndex = 0;
             this.picturebox.TabStop = false;
             this.picturebox.Click += new System.EventHandler(this.btnpicturebox);
@@ -95,7 +96,7 @@
             // Play_Again
             // 
             this.Play_Again.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Play_Again.Location = new System.Drawing.Point(749, 342);
+            this.Play_Again.Location = new System.Drawing.Point(729, 340);
             this.Play_Again.Name = "Play_Again";
             this.Play_Again.Size = new System.Drawing.Size(175, 70);
             this.Play_Again.TabIndex = 5;
@@ -107,13 +108,24 @@
             // 
             this.Exit.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit.Location = new System.Drawing.Point(749, 211);
+            this.Exit.Location = new System.Drawing.Point(729, 210);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(175, 74);
             this.Exit.TabIndex = 6;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.buttonexit_Click);
+            // 
+            // Rules
+            // 
+            this.Rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rules.Location = new System.Drawing.Point(729, 100);
+            this.Rules.Name = "Rules";
+            this.Rules.Size = new System.Drawing.Size(175, 71);
+            this.Rules.TabIndex = 7;
+            this.Rules.Text = "Rules";
+            this.Rules.UseVisualStyleBackColor = true;
+            this.Rules.Click += new System.EventHandler(this.btn_Rules);
             // 
             // Gunshotform
             // 
@@ -122,6 +134,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(916, 538);
+            this.Controls.Add(this.Rules);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Play_Again);
             this.Controls.Add(this.ShootAway);
@@ -131,6 +144,7 @@
             this.Controls.Add(this.picturebox);
             this.Name = "Gunshotform";
             this.Text = "Gunshotform";
+            this.Load += new System.EventHandler(this.Gunshotform_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
 
@@ -146,6 +160,7 @@
         private System.Windows.Forms.Button ShootAway;
         private System.Windows.Forms.Button Play_Again;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button Rules;
     }
 }
 

@@ -23,10 +23,17 @@ namespace Russian_Roulette_game
         {
             InitializeComponent();
         }
+        private void Gunshotform_Load_1(object sender, EventArgs e)
+        {
+            Spin.Enabled = false;
+            Shoot.Enabled = false;
+            ShootAway.Enabled = false;
+            Play_Again.Enabled = false;
+        }
 
         private void buttonload_Click(object sender, EventArgs e)
         {
-            Spin.Enabled = true;//Enablingbling spin button
+            Spin.Enabled = true;//Enabling spin button
             Load.Enabled = false;//Disabling load button
 
             //code to display image in picture box on button click  
@@ -79,21 +86,19 @@ namespace Russian_Roulette_game
 
             picturebox.Image = bmp_Object;
 
-            logic_obj.shoot_position = logic_obj.shoot();
+            logic_obj.shoot_position = logic_obj.shoot_method();
             if (logic_obj.shoot_position == 1)
             {
-                MessageBox.Show("Bullet shoot on your head.You are dead");
+                MessageBox.Show("empty shoot");
             }
             else
             {
-                MessageBox.Show("empty shoot");
+                MessageBox.Show("Bullet shoot on your head.You are dead");
             }
         }
 
         private void buttonshootaway_Click(object sender, EventArgs e)
         {
-
-
             Shoot.Enabled = true;//disabling shoot button
             ShootAway.Enabled = false;
             //code to display image in picture box on button click  
@@ -127,14 +132,16 @@ namespace Russian_Roulette_game
             Application.Exit();
         }
 
-        private void Gunshotform_Load(object sender, EventArgs e)
+        private void btnpicturebox(object sender, EventArgs e)
         {
 
         }
 
-        private void btnpicturebox(object sender, EventArgs e)
+        private void btn_Rules(object sender, EventArgs e)
         {
-
+            Game_Rules rules_obj = new Game_Rules();
+            rules_obj.Show();
+            this.Hide();
         }
     }
 }
