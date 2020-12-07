@@ -23,12 +23,11 @@ namespace Russian_Roulette_game
         {
             InitializeComponent();
         }
-        private void Gunshotform_Load_1(object sender, EventArgs e)
+        private void Gunshotform_Load(object sender, EventArgs e)
         {
             Spin.Enabled = false;
             Shoot.Enabled = false;
             ShootAway.Enabled = false;
-            Play_Again.Enabled = false;
         }
 
         private void buttonload_Click(object sender, EventArgs e)
@@ -44,6 +43,7 @@ namespace Russian_Roulette_game
             Bitmap bmp_Object = new Bitmap(myStream);
 
             picturebox.Image = bmp_Object;
+            logic_obj.load_position = 1;
 
             //sound code
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Russian_Roulette_game.Properties.Resources.load1);
@@ -58,7 +58,8 @@ namespace Russian_Roulette_game
         {
             Shoot.Enabled = true;//Enabling shoot button
             Spin.Enabled = false;//disabling spin button
-            //code to display image in picture box on button click  
+            //code to display image in picture box on button click 
+            ShootAway.Enabled = true;
 
            Assembly myAssembly = Assembly.GetExecutingAssembly(); 
 
@@ -67,6 +68,9 @@ namespace Russian_Roulette_game
             Bitmap bmp_Object = new Bitmap(myStream);
 
             picturebox.Image = bmp_Object;
+
+            Random Rnd_obj = new Random();
+            logic_obj.spin_position = Rnd_obj.Next(1, 7);
 
             MessageBox.Show("Bullet position after spining the chamber is" + logic_obj.spin_position.ToString());
 
@@ -89,11 +93,12 @@ namespace Russian_Roulette_game
             logic_obj.shoot_position = logic_obj.shoot_method();
             if (logic_obj.shoot_position == 1)
             {
-                MessageBox.Show("empty shoot");
+                MessageBox.Show("Bullet shoot on your head.You are dead");
+                
             }
             else
             {
-                MessageBox.Show("Bullet shoot on your head.You are dead");
+                MessageBox.Show("empty shoot");
             }
         }
 
@@ -115,7 +120,31 @@ namespace Russian_Roulette_game
 
             Sound_Object.Play();
 
+            if (logic_obj.chances <=2)
+            {
+                logic_obj.shoot_position = logic_obj.shoot_method();
+                if (logic_obj.shoot_position==1)
+                {
+                    MessageBox.Show("Wow!! you are safe. you win the game");
+                    Shoot.Enabled = false;
+                    ShootAway.Enabled = false;
+                }
+                else
+                {
+                    logic_obj.chances++;
+                    if (logic_obj.chances==2)
+                    {
 
+                        MessageBox.Show("Your 2 chances are finished. you lose the game");
+                    }
+                    else
+                    {
+                        MessageBox.Show("empty shoot");
+                    }
+                }
+
+
+            }
 
 
 
@@ -143,5 +172,7 @@ namespace Russian_Roulette_game
             rules_obj.Show();
             this.Hide();
         }
+
+       
     }
 }

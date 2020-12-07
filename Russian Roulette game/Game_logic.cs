@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Russian_Roulette_game
 {
-    class Game_logic
+   public  class Game_logic
     {
         public int load_position { get; set; }
         public int spin_position { get; set; }

@@ -15,7 +15,7 @@ namespace Russian_Roulette_gameUnitTest
         {
             unitTesting_obj.load_position = 1;
             unitTesting_obj.spin_position = 1;
-            int testResult = unitTesting_obj.Shoot_method();
+            int testResult = unitTesting_obj.shoot_method();
             Assert.AreEqual(1, testResult);
         }
         [TestMethod]
@@ -24,7 +24,7 @@ namespace Russian_Roulette_gameUnitTest
 
             unitTesting_obj.load_position = 1;
             unitTesting_obj.spin_position = 5;
-            int testResult = unitTesting_obj.Shoot_method();
+            int testResult = unitTesting_obj.shoot_method();
             Assert.AreNotEqual(1, testResult);
         }
     }
