@@ -69,7 +69,7 @@ namespace Russian_Roulette_game
             Random Rnd_obj = new Random();
             logic_obj.spin_position = Rnd_obj.Next(1, 7);
 
-            MessageBox.Show("Bullet position after spining the chamber is" + logic_obj.spin_position.ToString());
+            MessageBox.Show("Bullet position after spining the chamber is " + logic_obj.spin_position.ToString());
 
         }
 
@@ -118,7 +118,7 @@ namespace Russian_Roulette_game
                 logic_obj.shoot_position = logic_obj.shoot_method();
                 if (logic_obj.shoot_position==1)
                 {
-                    MessageBox.Show("Wow!! you are safe. you win the game");
+                    MessageBox.Show("Wow!! you are safe. you win the game ");
                     Shoot.Enabled = false;
                     ShootAway.Enabled = false;
                 }
