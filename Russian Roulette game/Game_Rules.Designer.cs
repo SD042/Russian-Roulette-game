@@ -50,7 +50,7 @@
             this.textBox1.Location = new System.Drawing.Point(81, 97);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 48);
+            this.textBox1.Size = new System.Drawing.Size(303, 48);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Register Now";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -61,7 +61,7 @@
             this.textBox2.Location = new System.Drawing.Point(81, 180);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 43);
+            this.textBox2.Size = new System.Drawing.Size(303, 43);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Age over 16";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -72,7 +72,7 @@
             this.textBox3.Location = new System.Drawing.Point(81, 264);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 42);
+            this.textBox3.Size = new System.Drawing.Size(303, 42);
             this.textBox3.TabIndex = 3;
             this.textBox3.Text = "Play offline";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
