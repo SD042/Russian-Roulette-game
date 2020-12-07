@@ -45,6 +45,7 @@
             this.picturebox.Location = new System.Drawing.Point(12, 12);
             this.picturebox.Name = "picturebox";
             this.picturebox.Size = new System.Drawing.Size(674, 361);
+            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 0;
             this.picturebox.TabStop = false;
             this.picturebox.Click += new System.EventHandler(this.btnpicturebox);
@@ -52,7 +53,7 @@
             // Load
             // 
             this.Load.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Load.Location = new System.Drawing.Point(-6, 456);
+            this.Load.Location = new System.Drawing.Point(29, 446);
             this.Load.Name = "Load";
             this.Load.Size = new System.Drawing.Size(167, 78);
             this.Load.TabIndex = 1;
@@ -63,7 +64,7 @@
             // Spin
             // 
             this.Spin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Spin.Location = new System.Drawing.Point(183, 456);
+            this.Spin.Location = new System.Drawing.Point(229, 447);
             this.Spin.Name = "Spin";
             this.Spin.Size = new System.Drawing.Size(167, 78);
             this.Spin.TabIndex = 2;
@@ -74,7 +75,7 @@
             // Shoot
             // 
             this.Shoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Shoot.Location = new System.Drawing.Point(407, 456);
+            this.Shoot.Location = new System.Drawing.Point(444, 446);
             this.Shoot.Name = "Shoot";
             this.Shoot.Size = new System.Drawing.Size(167, 80);
             this.Shoot.TabIndex = 3;
@@ -85,7 +86,7 @@
             // ShootAway
             // 
             this.ShootAway.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShootAway.Location = new System.Drawing.Point(604, 456);
+            this.ShootAway.Location = new System.Drawing.Point(657, 446);
             this.ShootAway.Name = "ShootAway";
             this.ShootAway.Size = new System.Drawing.Size(167, 80);
             this.ShootAway.TabIndex = 4;
@@ -144,7 +145,6 @@
             this.Controls.Add(this.picturebox);
             this.Name = "Gunshotform";
             this.Text = "Gunshotform";
-            //this.Load += new System.EventHandler(this.Gunshotform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
 

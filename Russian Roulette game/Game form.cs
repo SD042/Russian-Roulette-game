@@ -22,14 +22,11 @@ namespace Russian_Roulette_game
         public Gunshotform()
         {
             InitializeComponent();
-        }
-        private void Gunshotform_Load(object sender, EventArgs e)
-        {
             Spin.Enabled = false;
             Shoot.Enabled = false;
             ShootAway.Enabled = false;
         }
-
+    
         private void buttonload_Click(object sender, EventArgs e)
         {
             Spin.Enabled = true;//Enabling spin button
@@ -78,8 +75,6 @@ namespace Russian_Roulette_game
 
         private void buttonshoot_Click(object sender, EventArgs e)
         {
-            ShootAway.Enabled = true;//Enabling ShootAway button
-            Shoot.Enabled = false;//Disabling Shoot button
             //code to display image in picture box on button click  
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
@@ -104,8 +99,6 @@ namespace Russian_Roulette_game
 
         private void buttonshootaway_Click(object sender, EventArgs e)
         {
-            Shoot.Enabled = true;//disabling shoot button
-            ShootAway.Enabled = false;
             //code to display image in picture box on button click  
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
